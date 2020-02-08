@@ -11,6 +11,6 @@ if (num1 > num2) {
 } else if (num1 < num2){
     alert("I GOT IT!!\n\nThe larger number is: " + num2);
 } else {
-    alert("Ummm... these numbers are the same.");
+    alert("Ummm... these numbers are the same.  Try again.");
 }
 
