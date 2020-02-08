@@ -15,6 +15,7 @@ window.console.log("choice value is: " + choice);
 // BOOLEEN FOR COINFLIP HEADS vs TAILS
 heads = (coinFlip < 50);
 tails = (coinFlip >= 50);
+
 window.console.log("Is coinFlip heads?(<50)  "+ heads + "." + "  Is coinFlip tails?(>=50)  " + tails + ".");
 
 // BOOLEEN FOR CHOICE HEADS vs TAILS
