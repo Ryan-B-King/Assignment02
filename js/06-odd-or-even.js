@@ -1,10 +1,14 @@
 // GLOBAL VARIABLES
-let value = 0;
+let value;
 let result;
 
-// DO WHILE LOOP USING MODULUS TO DETERMINE IF VALUE IS ODD OR EVEN THEN STATING IN CONSOLE
+// INITIAL VALUE 
+value = 0
+
+// DO WHILE LOOP USING MODULUS TO DETERMINE IF VALUE IS ODD OR EVEN
 do{
     result = value % 2;
+    // NESTED IF STATEMENT TO DISPLAY ODD OR EVEN
     if (result === 0){
         window.console.log(value + " is Even");
     } else {

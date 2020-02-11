@@ -10,10 +10,10 @@ window.console.log(typeof num1, num1, typeof num2, num2);
 
 // IF STATEMENT & ALERT TO RETURN LARGER VALUE BACK TO USER
 if (num1 > num2) {
-    alert("I GOT IT!!\n\nThe larger number is: " + num1);
+    window.document.write("I GOT IT!!\n\nThe larger number is: " + num1);
 } else if (num1 < num2){
-    alert("I GOT IT!!\n\nThe larger number is: " + num2);
+    window.document.write("I GOT IT!!\n\nThe larger number is: " + num2);
 } else {
-    alert("Ummm... these numbers are the same.  Try again.");
+    window.document.write("Ummm... these numbers are the same.  Try again.");
 }
 
