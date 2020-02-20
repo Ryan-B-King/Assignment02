@@ -6,9 +6,47 @@ let years;
 let i;
 
 //COLLECT VALUES FROM USER
-investment = parseFloat(window.prompt("Enter investment amount as xxxx.xx"));
-rate = parseFloat(window.prompt("Enter interest rate as xx.x"));
-years = parseInt(window.prompt("Enter number of years"), 10);
+investment = parseFloat(window.prompt("Enter investment amount as xxxx.xx", "Input a numeric value of 1.00 or more")).toFixed(2);
+
+// VALIDATE INVESTMENT INPUT
+if (!isNaN(investment) && investment >= 1) {
+    investment;
+} else {
+    while (isNaN(investment) || investment < 1) {
+        investment = parseFloat(window.prompt("Enter investment amount as xxxx.xx", "Input a numeric value of 1.00 or more")).toFixed(2);
+        if (!isNaN(investment) && investment >= 1) {
+            break;
+        }
+    }
+}
+
+rate = parseFloat(window.prompt("Enter interest rate as x.x", "Input betweem 0.1 and 6.9")).toFixed(1);
+
+// VALIDATE RATE INPUT
+if (!isNaN(rate) && rate >= 0.1 && rate <= 6.9) {
+    rate;
+} else {
+    while (isNaN(rate) || rate < 0.1 || rate > 6.9) {
+        rate = parseFloat(window.prompt("Enter interest rate as x.x", "Input betweem 0.1 and 6.9")).toFixed(1);
+        if (!isNaN(rate) && rate >= 0.1 && rate <= 6.9) {
+            break;
+        }
+    }
+}
+
+years = parseInt(window.prompt("Enter number of years", "Input between 1 to 30"), 10);
+
+// VALIDATE YEARS INPUT
+if (!isNaN(years) && years >= 1 && years <= 30) {
+    years;
+} else {
+    while (isNaN(years) || years < 1 || years > 30) {
+        years = parseInt(window.prompt("Enter number of years", "Input between 1 to 30"), 10);
+        if (!isNaN(years) && years >= 1 && years <= 30) {
+            break;
+        }
+    }
+}
 
 //CALCULATE FUTURE VALUE
 futureValue = investment;

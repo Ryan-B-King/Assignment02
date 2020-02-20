@@ -18,7 +18,7 @@ do {
 
     // INPUT VALIDATION
     if (again === "y" || again === "n") {
-        again = again;
+        again;
     } else {
         while (again !== "y" || again !== "n") {
             again = window.prompt("Repeat entry? (y/n)");
