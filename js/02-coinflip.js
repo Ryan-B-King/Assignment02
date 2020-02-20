@@ -4,20 +4,20 @@ let choice;
 let heads;
 let tails;
 
-// GENERATE RANDOM VALUE OF COINFLIP
+// GENERATE RANDOM VALUE OF COINFLIP + TESTING VALUES IN CONSOLE
 coinFlip = parseInt((Math.random(coinFlip) * 100)).toFixed(0);
 window.console.log("coinFlip value is: " + coinFlip);
 
-// USER INPUTS CHOICE VALUE
+// USER INPUTS CHOICE VALUE + TESTING VALUES IN CONSOLE
 choice = window.prompt("Can you win the coin toss?\n\nType 'Heads' or 'Tails'");
 window.console.log("choice value is: " + choice);
 
-// BOOLEEN FOR COINFLIP HEADS vs TAILS
+// BOOLEEN FOR COINFLIP HEADS vs TAILS + TESTING VALUES IN CONSOLE
 heads = (coinFlip < 50);
 tails = (coinFlip >= 50);
 window.console.log("Is coinFlip heads?(<50)  "+ heads + "." + "  Is coinFlip tails?(>=50)  " + tails + ".");
 
-// BOOLEEN FOR CHOICE HEADS vs TAILS
+// BOOLEEN FOR CHOICE HEADS vs TAILS + TESTING VALUES IN CONSOLE
 choiceHeads = (choice === "Heads" || choice === "heads");
 choiceTails = (choice === "Tails" || choice === "tails");
 window.console.log("Is the value choiceHeads?  "+ choiceHeads + "." + "  Is the value choiceTails?  " + choiceTails + ".");

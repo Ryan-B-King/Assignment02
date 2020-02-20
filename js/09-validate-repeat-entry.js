@@ -1,15 +1,34 @@
-let miles, gallons, mpg, again = "y";
+// GLOBAL VARIABLES
+let miles;
+let gallons;
+let mpg;
+let again = "y";
 
+//LOOP TO COLLECT MPG INFORMATION
 do {
     miles = parseFloat(window.prompt("Enter miles driven"));
     gallons = parseFloat(window.prompt("Enter size of tank in gallons"));
-    if (!isNaN(miles) && miles > 0 && !isNaN(gallons) && gallons >0) {
+    if (!isNaN(miles) && miles > 0 && !isNaN(gallons) && gallons > 0) {
         mpg = miles / gallons;
-        window.document.write("Miles per gallon: " + parseInt(mpg) + "<br>");
+        window.document.write("Miles per gallon: " + parseInt(mpg, 10) + "<br>");
     } else {
         window.alert("One or both entries are invalid");
     }
-    again = window.prompt("Repeat entry? (y/n)");
-} while (again === "y");
-// window.document.write("Party's over, man. Go home"); not necessary but could be a useful format
+    again = window.prompt("Repeat entries? (y/n)", "y");
 
+    // INPUT VALIDATION
+    if (again === "y" || again === "n") {
+        again = again;
+        window.console.log(again + "  VALID");
+    } else {
+        while (again !== "y" || again !== "n") {
+            again = window.prompt("Repeat entry? (y/n)");
+            window.console.log("  counter  " + again + "  again");
+            if (again === "y" || again === "n") {
+                break;
+            }
+        }
+    }
+    // END OF VALIDATION
+
+} while (again === "y");

@@ -6,10 +6,7 @@ let counter;
 triangle = "#";
 
 // FOR LOOP TO CONCATENATE # AND MAKE TRIANGLE IN CONSOLE 
-for (counter = 1; counter < 7; counter++){
+for (counter = 0; counter < 7; counter++){
     window.console.log(triangle);
     triangle = triangle + "#";
 }
-window.console.log(triangle);
-
-
