@@ -19,11 +19,9 @@ do {
     // INPUT VALIDATION
     if (again === "y" || again === "n") {
         again = again;
-        window.console.log(again + "  VALID");
     } else {
         while (again !== "y" || again !== "n") {
             again = window.prompt("Repeat entry? (y/n)");
-            window.console.log("  counter  " + again + "  again");
             if (again === "y" || again === "n") {
                 break;
             }
